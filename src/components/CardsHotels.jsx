@@ -1,50 +1,30 @@
-import React, { useState } from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
-import DetailsHotel from '../pages/DetailsHotel';
 
-export const CardsHotels = ({ id, name, location, price, image, available, addToCardsHotels }) => { //Props
-    const [count, setCount] = useState(0); // Initialiser le count 
-
-    const handleRemoveClick = () => { // Création variable pour décrémenter le count en prenant compte de l'incrémentation précédente
-        setCount(prevCount => Math.max(0, prevCount - 1)); // The Math.max() method returns the number with the highest value.
-        // prevCount =>  prend comme argument la valeur précédente de count (qu'on appelle ici prevCount).
-
-    };
-
-    const cardsHotels = {
-        id: id, //variable des proprs
-        name: name,
-        location: location,
-        price: price,
-        image: image,
-        available: available,
-    }
-
+export const CardsHotels = ({ id, name, location, price, image, available }) => {
     return (
-        <div className="hotel-card">
-          
-            <h3>{name}</h3>
-            <p>Location: {location}</p>
-            <p>Price: ${price}</p>
-            <p>Available: {available ? 'Yes' : 'No'}</p>
-            <button onClick={() => addToCardsHotels({ id, name, location, price, image, available })}>
-                Add to cart ({count})
-            </button>
-            <button
-
-                type="button"
-                onClick={handleRemoveClick}
-                aria-label="Remove from cart">
-
-                🗑️
-            </button>
-            <Link to ={`/Hotels/${id}`}> View details</Link>
-
-
+        <div className="flex-shrink-0 w-80 bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="relative w-full pt-[56.25%]">
+                <img 
+                    src={image} 
+                    alt={name} 
+                    className="absolute inset-0 w-full h-full object-cover"
+                />
+            </div>
+            <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">{name}</h3>
+                <p className="mb-1">Location: {location}</p>
+                <p className="mb-1">Price: ${price}</p>
+                <p className="mb-3">Available: {available ? 'Yes' : 'No'}</p>
+                <Link 
+                    to={`/Hotels/${id}`}
+                    className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+                >
+                    View details
+                </Link>
+            </div>
         </div>
+    );
+};
 
-    )
-}
-
-export default CardsHotels
-
+export default CardsHotels;

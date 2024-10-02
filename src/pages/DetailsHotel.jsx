@@ -19,11 +19,10 @@ const DetailsHotel = () => {
 
   return (
     <div>
-    <h1> {id}</h1>
-    <p> {hotel.name}</p>
-    <p>{hotel.image}</p>
-    <p> {hotel.price}</p>
-    <p> {hotel.available}</p>
+    <h2> {hotel.name}</h2>
+    <img src={hotel.image}  />
+    <p> € {hotel.price}</p>
+    <p>Available: {hotel.available ? 'Yes' : 'No'}</p>
 
     </div>
 
