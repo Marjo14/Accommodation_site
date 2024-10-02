@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Hotel Luxe",
+      "location": "Paris",
+      "price": 150,
+      "image": "/images/hotel1.jpg",
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Resort Beach",
+      "location": "Nice",
+      "price": 200,
+      "image": "/images/hotel2.jpg",
+      "available": false
+    },
+    {
+      "id": 3,
+      "name": "Mountain Retreat",
+      "location": "Chamonix",
+      "price": 250,
+      "image": "/images/hotel3.jpg",
+      "available": true
+    }
+  ]
