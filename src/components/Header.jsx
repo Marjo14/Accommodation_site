@@ -8,7 +8,7 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
           {/* CHANGÉ: Remplacé la div par un conteneur flex */}
           <div className="flex items-center">
-            
+
             {/* AJOUTÉ: Nouveau Link pour l'icône de la maison */}
             <Link to="/" className="mr-4">
               <svg xmlns="http://www.w3.org/2000/svg" 
@@ -22,6 +22,7 @@ const Header = () => {
             <Link to="/hotels" className="text-2xl font-bold text-gray-800 hover:text-gray-600 transition duration-300">
               Hotels
             </Link>
+            <Link to="/cart" className="text-2xl font-bold text-gray-800 hover:text-gray-600 transition duration-300 absolute right-5">Cart</Link>
           </div>
         </div>
       </header>

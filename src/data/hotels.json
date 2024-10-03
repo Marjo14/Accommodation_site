@@ -22,5 +22,32 @@
       "price": 250,
       "image": "/images/hotel3.jpg",
       "available": true
+    },
+
+    {
+      "id": 4,
+      "name": "Mountain Retreat",
+      "location": "Chamonix",
+      "price": 250,
+      "image": "/images/hotel3.jpg",
+      "available": true
+    },
+
+    {
+      "id": 5,
+      "name": "Mountain Retreat",
+      "location": "Chamonix",
+      "price": 250,
+      "image": "/images/hotel3.jpg",
+      "available": true
+    },
+
+    {
+      "id": 6,
+      "name": "Mountain Retreat",
+      "location": "Chamonix",
+      "price": 250,
+      "image": "/images/hotel3.jpg",
+      "available": true
     }
   ]

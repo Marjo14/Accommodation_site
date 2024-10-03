@@ -7,6 +7,8 @@ const DetailsHotel = () => {
     const { id } = useParams();
     const [hotel, setHotel] = useState(null);
 
+    
+
     useEffect(() => {
         const selectedHotel = Data.find(h => h.id === parseInt(id));
         setHotel(selectedHotel);
