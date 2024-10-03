@@ -11,14 +11,13 @@ const Hotels = ({ addToCardsHotels }) => {
     };
 
     return (
-        <div className="w-full px-10">
-            <h2 className="text-2xl font-bold mb-10 text-center mt-5"> {/* Ajoutez mt-4 pour l'espace supérieur */}
-    Vous trouverez la sélection des hôtels :
-</h2>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-bold mb-10 text-center mt-5">
+                Vous trouverez la sélection des hôtels :
+            </h2>
            
-           
-            <div className="flex justify-between">
-                {cardsHotels.slice(0, 3).map((element) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {cardsHotels.map((element) => (
                     <CardsHotels 
                         key={element.id}
                         id={element.id}
@@ -28,7 +27,6 @@ const Hotels = ({ addToCardsHotels }) => {
                         image={element.image} 
                         available={element.available} 
                         addToCardsHotels={() => handleAddToCart(element)}
-                        className="w-[32%]" // Ajustez ce pourcentage si nécessaire
                     />
                 ))}
             </div>
