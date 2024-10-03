@@ -11,8 +11,12 @@ const Hotels = ({ addToCardsHotels }) => {
     };
 
     return (
-        <div className="w-full px-4">
-            <h2 className="text-2xl font-bold mb-6 text-center">Vous trouverez la sélection des hôtels :</h2>
+        <div className="w-full px-10">
+            <h2 className="text-2xl font-bold mb-10 text-center mt-5"> {/* Ajoutez mt-4 pour l'espace supérieur */}
+    Vous trouverez la sélection des hôtels :
+</h2>
+           
+           
             <div className="flex justify-between">
                 {cardsHotels.slice(0, 3).map((element) => (
                     <CardsHotels 
