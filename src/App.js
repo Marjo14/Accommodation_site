@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Hotels from './pages/Hotels';
 import DetailsHotel from './pages/DetailsHotel';
+import Cart from './pages/Cart';
 
 
 function App() {
@@ -15,13 +16,13 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-           <Route path="/Hotels" element={<Hotels  />} />
-           <Route path="/Hotels/:id" element={<DetailsHotel/>} />
-           <Route path="/cart"  />
-      
+            <Route path="/Hotels" element={<Hotels />} />
+            <Route path="/Hotels/:id" element={<DetailsHotel />} />
+            <Route path="/Cart" element={<Cart />} />
+
           </Routes>
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );

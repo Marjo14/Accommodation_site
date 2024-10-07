@@ -26,15 +26,15 @@
 
     {
       "id": 4,
-      "name": "Mountain Retreat",
-      "location": "Chamonix",
-      "price": 250,
-      "image": "/images/hotel3.jpg",
-      "available": true
+      "name": "Resort Beach",
+      "location": "Nice",
+      "price": 200,
+      "image": "/images/hotel2.jpg",
+      "available": false
     },
 
     {
-      "id": 5,
+      "id": 5,   
       "name": "Mountain Retreat",
       "location": "Chamonix",
       "price": 250,
@@ -44,10 +44,10 @@
 
     {
       "id": 6,
-      "name": "Mountain Retreat",
-      "location": "Chamonix",
-      "price": 250,
-      "image": "/images/hotel3.jpg",
+      "name": "Hotel Luxe",
+      "location": "Paris",
+      "price": 150,
+      "image": "/images/hotel1.jpg",
       "available": true
     }
   ]
